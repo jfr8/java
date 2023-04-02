@@ -14,7 +14,7 @@ public class Newsfeed {
     }
 
     public String getTopTopics(){
-        return topics[0];
+        return topics[0]; // This will return Opinion since its on index 0
     }
 
     public void viewTopic(int topicIndex){
@@ -26,12 +26,13 @@ public class Newsfeed {
 
         System.out.println("The top topic is " + sampleFeed.getTopTopics());
 
-        sampleFeed.viewTopic(1);
-        sampleFeed.viewTopic(1);
+        sampleFeed.viewTopic(1); // first view
+        sampleFeed.viewTopic(1); // second view
         sampleFeed.viewTopic(3);
         sampleFeed.viewTopic(2);
         sampleFeed.viewTopic(2);
-        sampleFeed.viewTopic(1);
+        sampleFeed.viewTopic(1); // third view
+        sampleFeed.viewTopic(1); // forth view
 
         System.out.println("The " + sampleFeed.topics[1] + " topic has been viewed " + sampleFeed.views[1] + " times!");
     }
